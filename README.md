@@ -39,3 +39,21 @@ export PATH
 # Path ScreenShot
 
 <img src="Path Jdk.png"/>
+
+# Install Hadoop
+```
+wget https://downloads.apache.org/hadoop/common/stable/hadoop-3.3.1.tar.gz
+```
+
+# Hadoop to Containers
+```
+docker cp hadoop-3.3.1.tar.gz namenode:/
+docker cp hadoop-3.3.1.tar.gz datanode1:/
+docker cp hadoop-3.3.1.tar.gz datanode2:/
+```
+# Unzip and Install Hadoop File
+```
+dnf install tar -y
+tar -xvf hadoop-3.3.1.tar.gz
+```
+
